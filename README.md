@@ -1,16 +1,21 @@
-# React + Vite
+A simple, responsive React application to create and manage personal notes. Built with React, Tailwind CSS, and React Icons.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+Create Notes: Add a title and description via a controlled form.
+Delete Notes: Remove notes instantly with the click of a button.
+Loading State: Simulated 2-second loading screen for better UX.
+Form Validation: Submit button is disabled if the title is empty.
+Responsive Design: Styled using Tailwind CSS for a clean look on all screen sizes.
 
-Currently, two official plugins are available:
+Tech Stack:
+Frontend: React.js
+Styling: Tailwind CSS
+Icons: React Icons (fa6 library)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation and setup:
+Clone the project
+Then install dependencies npm install
+Install React Icons npm install react-icons
+Start the server npm run dev
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All set 🫡🫡
