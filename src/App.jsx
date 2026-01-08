@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     setTimeout(() => setIsLoading(false),2000)
-  })
+  },[])
 
   const onAdd = (note) => {
     setNotes([...notes, {...note, id : Date.now()}] )

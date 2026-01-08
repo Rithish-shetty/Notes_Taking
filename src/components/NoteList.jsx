@@ -1,3 +1,4 @@
+import NoteItem from "./NoteItem";
 
 const NoteList = ({notes,onDelete}) => {
     if(notes.length === 0){
@@ -8,7 +9,15 @@ const NoteList = ({notes,onDelete}) => {
         )
     }
       return (
-    <NoteList notes={notes} onDelete={onDelete} />
+    <div>
+      {notes.map(note => (
+        <NoteItem
+        key={note.id}
+        note={note}
+        onDelete={() => onDelete(note.id)}
+        />
+      ))}
+    </div>
   );
 }
 
